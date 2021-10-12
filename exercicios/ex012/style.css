@@ -1,0 +1,12 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(103, 240, 240);
+    font-family:'Lora';
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
