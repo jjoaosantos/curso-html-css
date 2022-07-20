@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+@font-face {
+    font-family: 'html5';
+    src: url(fontes/html5_values.ttf) format('truetype');
+    font-weight: normal;
+}
+
+
+:root {
+    --cor1: #f0ffff;
+    --cor2: #a3ffff;
+    --cor3: #c0cccc;
+    --cor4: #788080;
+    --cor5: #528080;
+
+    --font-padrao: 'Nota Sans Mono', monospace;
+    --font-header-titulo: 'html5', sans-serif;
+    --font-nav: 'Ubuntu', sans-serif; 
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--font-padrao);
+    background-color: var(--cor1);
+}
+
+.vermelho {
+    color: rgb(128, 0, 0);
+    font-family: Consolas, serif;
+}
+
+.red {
+    color: red;
+    font-family: Consolas, serif;
+}
+
+header {
+    min-height: 120px;
+    padding: 5px;
+    background-color: var(--cor2);
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--font-header-titulo);
+    font-size: 8em;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+nav {
+    background-color: var(--cor2);
+    padding: 18px;
+    box-shadow: -2px 4px 3px rgba(129, 129, 129, 0.226);
+}
+
+nav > a {
+    color: var(--cor5);
+    text-decoration: none;
+    font-family: var(--font-nav);
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor2);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    box-shadow: 0px 2px 4px rgb(129, 129, 129);
+
+    background-color: white;
+}
+
+main h1 {
+    font-size: 2em;
+    text-align: center;
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+main h2 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 1.8em;
+}
+
+main h3 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 1.4em;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.8em;
+    text-align: justify;
+    text-indent: 30px;
+    transition-duration: .5s;
+}
+
+main a {
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+main a:hover {
+    background-color: var(--cor2);
+}
+
+main img {
+    max-width: 100%;
+}
+
+.grau {
+    display: block;
+    margin: auto;
+}
+
+#linear > div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px;
+    border-color: var(--cor5);
+    border-style: solid;
+
+    background-color: var(--cor1);
+
+    font-weight: bold;
+    font-family: Consolas, sans-serif;
+    font-size: 16px;
+}
+
+#radial > div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px;
+    border-color: var(--cor5);
+    border-style: solid;
+
+    background-color: var(--cor1);
+
+    font-weight: bold;
+    font-family: Consolas, sans-serif;
+    font-size: 16px;
+}
+
+aside ul {
+    background-color: var(--cor1);
+
+    border: 2px;
+    border-color: var(--cor5);
+    border-style: solid;
+
+    list-style-position: inside;
+
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+
+    padding: 15px;
+}
