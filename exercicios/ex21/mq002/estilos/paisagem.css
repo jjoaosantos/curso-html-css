@@ -5,5 +5,5 @@
 body {
     background: url(../images/cev-landscape.jpg);
     background-position: left bottom;
-    background-size: cover;
+    background-size: cover; /**/
 }
