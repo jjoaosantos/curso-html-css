@@ -10,11 +10,11 @@ html, body {
     background-color: lightgray;
 }
 
-header {
+header > {
     background-color: gray;
 }
 
-header h1 {
+header > h1 {
     padding: 10px;
     text-align: center;
 }
@@ -36,11 +36,11 @@ menu {
     display: none;
 }
 
-menu ul {
+menu > ul {
     list-style-type: none;
 }
 
-menu ul li a {
+menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -50,7 +50,7 @@ menu ul li a {
     border-top: 2px solid gray;
 }
 
-menu ul li a:hover {
+menu > ul > li > a:hover {
     background-color: gray;
 }
 
@@ -63,11 +63,11 @@ main {
     border-radius: 10px;
 }
 
-article h2 {
+article > h2 {
     padding-bottom: 20px;
 }
 
-article p {
+article > p {
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
